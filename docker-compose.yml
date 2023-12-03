@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  jenkins:
+    build: .
+    image: my_marvin
+    container_name: my_marvin_container
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    environment:
+      - USER_CHOCOLATEEN_PASSWORD=your_chocolateen_password
+      - USER_VAUGIE_G_PASSWORD=your_vaugie_g_password
+      - USER_I_DONT_KNOW_PASSWORD=your_i_dont_know_password
+      - USER_NASSO_PASSWORD=your_nasso_password
